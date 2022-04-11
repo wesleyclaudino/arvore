@@ -46,6 +46,7 @@ public class Nodo {
 	}
 	
 	// Listagem na Pré-Ordem
+		// Pré-ordem: o primeiro nó é o nó raiz, seguido pela sub-árvore à esquerda e por fim pela sub-árvore à direita.
 	public static void preOrdem(Nodo nodo) {
 		if (nodo != null) {
 			System.out.print(nodo.valor + ", ");
@@ -55,6 +56,7 @@ public class Nodo {
 	}
 	
 	// Listagem Em-Ordem
+		// Em-ordem: lê-se primeiro a sub-árvore à esquerda, seguido pelo nó raiz e por fim pela sub-árvore à direita.
 	public static void emOrdem(Nodo nodo) {
 		if (nodo != null) {
 			emOrdem(nodo.nodoEsquerda);
@@ -64,6 +66,7 @@ public class Nodo {
 	}
 	
 	// Listagem na Pós-Ordem
+		// Pós-ordem: lê-se os nós da sub-árvore à esquerda, depois os nós da sub-árvore à direita e por fim o nó raiz.
 	public static void posOrdem(Nodo nodo) {
 		if (nodo != null) {
 			posOrdem(nodo.nodoEsquerda);
@@ -73,6 +76,7 @@ public class Nodo {
 	}
 	
 	// Método para mostrar nível da árvore
+		// Nível: é o número de nós no caminho da raiz até o nó desejado
 	public static void nivel(Nodo nodo) {
 		if (nodo == null) {
 			System.out.println("Fila não existente.");
