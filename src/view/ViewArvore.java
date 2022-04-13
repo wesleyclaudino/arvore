@@ -1,4 +1,4 @@
-package testes;
+package view;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import model.Nodo;
  * @author Matheus André Pereira Góes
  **/
 // Classe para testes da árvore
-public class TesteArvore {
+public class ViewArvore {
 	public static void main(String[] args) {		
 		// Inicializando os objetos para o uso
 		Scanner scan = new Scanner(System.in);
